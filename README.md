@@ -66,6 +66,20 @@ Two sample files (8 unique orders, one order repeated across files) produce:
 - USD 5,550.00 | EUR 3,910.50 | INR 1,051.00
 - Orders per customer: C001 = 3, C002 = 2, C003 = 2, C004 = 1
 
+## Screenshots
+
+**Loading a CSV into SAP HANA Cloud**
+
+![Agent loading a file](screenshots/01-agent-load.png)
+
+**Data stored in SAP HANA Database Explorer**
+
+![SQL result in HANA Cloud](screenshots/02-sql-result.png)
+
+**Plain-English questions with the SQL safety layer**
+
+![Question interface](screenshots/03-ask-agent.png)
+
 ## Security notes
 - No credentials in code or Git; use `.env`.
 - The query layer runs only validated read-only SQL on `SALES_ORDERS`.

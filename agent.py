@@ -88,8 +88,11 @@ def process(name):
 
 if __name__ == "__main__":
     print(f"Watching {WATCH} (Ctrl+C to stop)")
-    while True:
-        for name in os.listdir(WATCH):
-            if name.lower().endswith(".csv"):
-                process(name)
-        time.sleep(10)
+    try:
+        while True:
+            for name in os.listdir(WATCH):
+                if name.lower().endswith(".csv"):
+                    process(name)
+            time.sleep(10)
+    except KeyboardInterrupt:
+        print("\nAgent stopped.")
