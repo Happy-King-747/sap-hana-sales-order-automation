@@ -11,7 +11,7 @@ import time
 from dotenv import load_dotenv
 from hdbcli import dbapi
 
-load_dotenv()
+load_dotenv(override=True)
 
 WATCH = os.environ["WATCH_FOLDER"]
 DONE = os.path.join(WATCH, "processed")

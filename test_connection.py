@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 from hdbcli import dbapi
 
-load_dotenv()
+load_dotenv(override=True)
 
 variants = {
     "A: encrypt only": dict(encrypt=True),

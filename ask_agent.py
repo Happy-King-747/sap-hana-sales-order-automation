@@ -83,7 +83,7 @@ def question_to_sql(question: str) -> str:
 def run_query(sql: str):
     from dotenv import load_dotenv
     from hdbcli import dbapi
-    load_dotenv()
+    load_dotenv(override=True)
     conn = dbapi.connect(
         address=os.environ["HANA_HOST"], port=443,
         user=os.environ["HANA_USER"], password=os.environ["HANA_PASSWORD"],
