@@ -1,2 +1,4 @@
 hdbcli
 python-dotenv
+google-genai
+python-dotenv
